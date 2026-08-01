@@ -12,4 +12,3 @@ export function SiteFooter() {
     <div className="container footer-bottom"><span>© {new Date().getFullYear()} Global Education & Careers</span><span>Pre-launch local website demonstration (D)</span></div>
   </footer>;
 }
-

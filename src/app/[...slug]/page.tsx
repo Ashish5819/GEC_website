@@ -22,4 +22,3 @@ export default async function DynamicPage({ params }: { params: Promise<{ slug: 
   if (!page) notFound();
   return <PageView page={page}/>;
 }
-

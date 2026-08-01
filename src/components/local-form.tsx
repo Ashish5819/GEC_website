@@ -24,4 +24,3 @@ export function LocalForm({ compact = false }: { compact?: boolean }) {
     <p className="form-result" aria-live="polite">{message}</p>
   </form>;
 }
-
