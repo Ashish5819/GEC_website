@@ -50,6 +50,8 @@ Desktop.ini
 *.tmp
 *.temp
 .cache/
+*.tsbuildinfo
+next-env.d.ts
 
 # Local backup and exports
 backups/
