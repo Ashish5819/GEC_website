@@ -335,13 +335,13 @@ Do not create a commit when Git identity is unknown or unapproved.
 
 Use the active project folder:
 
-C:\Projects\GEC_website
+D:\Projects\GEC_website
 
 Do not perform development in the OneDrive source folder.
 
 The verified planning backup is:
 
-C:\Projects\GEC_Backups\GEC_website_planning_backup_2026-08-01
+D:\Projects\GEC_Backups\GEC_website_planning_backup_2026-08-01
 
 Do not modify the backup during normal development.
 
