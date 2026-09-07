@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { contact, PageData } from "@/lib/site-data";
 import { LocalForm } from "./local-form";
 
@@ -8,10 +9,18 @@ export function Breadcrumbs({ path }: { path: string }) {
 }
 
 export function PageView({ page }: { page: PageData }) {
+  const visual = pageVisual(page.path);
   return <>
-    <section className="page-hero"><div className="container narrow"><Breadcrumbs path={page.path}/><span className="eyebrow">{page.eyebrow}</span><h1>{page.title}</h1><p className="lead">{page.intro}</p><div className="hero-actions"><Link className="button" href="/book-counselling">Start a conversation (D)</Link><Link className="text-link" href="/contact">Contact GEC <span aria-hidden="true">→</span></Link></div></div></section>
+    <section className="page-hero"><div className={visual ? "container page-hero-grid" : "container narrow"}><div><Breadcrumbs path={page.path}/><span className="eyebrow">{page.eyebrow}</span><h1>{page.title}</h1><p className="lead">{page.intro}</p><div className="hero-actions"><Link className="button" href="/book-counselling">Start a conversation (D)</Link><Link className="text-link" href="/contact">Contact GEC <span aria-hidden="true">→</span></Link></div></div>{visual && <figure className="page-visual"><Image src={visual.src} alt={visual.alt} fill sizes="(max-width: 820px) 100vw, 38vw"/></figure>}</div></section>
     {page.kind === "form" ? <section className="section"><div className="container form-layout"><div><span className="eyebrow">Sample interface</span><h2>Share sample details for local review (D)</h2><p>No appointment is confirmed, and the entry never leaves this browser session. (D)</p></div><LocalForm /></div></section> : <PageBody page={page}/>}
   </>;
+}
+
+function pageVisual(path: string) {
+  if (path.startsWith("/study-abroad")) return { src: "/images/global-journey.webp", alt: "A student beginning an international education journey at an airport (D)" };
+  if (path.startsWith("/programs") || path.startsWith("/fields")) return { src: "/images/graduates.webp", alt: "Graduates celebrating together in an international university setting (D)" };
+  if (path.startsWith("/services")) return { src: "/images/global-professionals.webp", alt: "International professionals collaborating in a modern workplace (D)" };
+  return null;
 }
 function PageBody({ page }: { page: PageData }) {
   return <>
