@@ -6,7 +6,7 @@ import { pageMap, publicPaths } from "@/lib/site-data";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return publicPaths.map((path) => ({ slug: path.split("/").filter(Boolean) }));
+  return publicPaths.filter((path) => path !== "/about/founder").map((path) => ({ slug: path.split("/").filter(Boolean) }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }): Promise<Metadata> {

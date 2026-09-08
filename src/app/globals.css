@@ -4,6 +4,38 @@
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}@media(max-width:1050px){.container{width:min(100% - 48px,1280px)}.nav{gap:15px;font-size:.86rem}.brand-copy{display:none}.hero-grid{gap:45px}.tile-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:820px){.contact-inner>span:first-child{display:none}.contact-inner{justify-content:center}.nav-wrap{min-height:70px}.brand-copy{display:flex}.menu-button{display:flex}.nav{display:none;position:absolute;top:70px;left:0;right:0;max-height:calc(100vh - 70px);overflow:auto;padding:18px 24px 25px;background:white;border-bottom:1px solid var(--line);box-shadow:var(--shadow);align-items:stretch;flex-direction:column;gap:2px}.nav.open{display:flex}.nav>a:not(.button){padding:13px 7px;border-bottom:1px solid var(--line)}.nav-search{font-size:.93rem}.nav-search::before{content:""}.home-hero{padding:70px 0}.hero-grid,.split,.steps,.form-layout{grid-template-columns:1fr;gap:40px}.hero-panel{max-width:550px}.section{padding:64px 0}.feature-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.page-hero{padding:55px 0}.callout{align-items:flex-start;flex-direction:column}.section-heading{align-items:flex-start;flex-direction:column;gap:10px}}@media(max-width:560px){.container{width:calc(100% - 36px)}h1{font-size:2.55rem}.contact-inner{font-size:.72rem}.brand-copy{display:none}.tile-grid,.feature-grid,.field-grid,.search-results,.footer-grid{grid-template-columns:1fr}.service-list{grid-template-columns:1fr}.service-list a:nth-child(odd){margin-right:0}.section{padding:48px 0}.home-hero{padding:54px 0}.hero-actions{align-items:stretch;flex-direction:column}.hero-actions .button{width:100%}.hero-panel{padding:20px}.local-form{padding:22px}.callout{padding:30px}.footer-bottom{flex-direction:column}.page-hero h1{font-size:2.45rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 
+/* Approved GEC identity and founder profile */
+.brand-logo{width:58px;height:58px;object-fit:contain;border-radius:12px}
+.footer-logo{display:grid;place-items:center;width:82px;height:82px;margin-bottom:12px;overflow:hidden;border-radius:18px;background:white}
+.footer-logo img{width:100%;height:100%;object-fit:contain}
+.founder-spotlight{background:linear-gradient(135deg,#eef5fa 0%,#fff 64%)}
+.founder-spotlight-grid{display:grid;grid-template-columns:minmax(320px,.82fr) minmax(0,1.18fr);gap:76px;align-items:center}
+.founder-portrait{position:relative;min-height:560px;margin:0;overflow:hidden;border-radius:28px;box-shadow:var(--shadow);background:#dce8ef}
+.founder-portrait img{object-fit:cover;object-position:center 22%}
+.founder-hero{padding:72px 0;background:linear-gradient(135deg,#061a2b,var(--navy) 60%,#164c68);color:#dce8ef}
+.founder-hero h1{color:white;font-size:clamp(2.6rem,5vw,4.8rem)}
+.founder-hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.72fr);gap:70px;align-items:center}
+.founder-hero-copy .lead{color:#dce8ef}
+.founder-hero-photo{position:relative;min-height:600px;margin:0;overflow:hidden;border:1px solid rgba(255,255,255,.18);border-radius:28px;box-shadow:0 30px 70px rgba(0,0,0,.28)}
+.founder-hero-photo img{object-fit:cover;object-position:center 20%}
+.founder-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.founder-facts div{padding:18px;border:1px solid rgba(255,255,255,.16);border-radius:14px;background:rgba(255,255,255,.07)}
+.founder-facts strong{display:block;color:white;font-family:var(--heading);font-size:1.1rem}
+.founder-facts span{color:#bcd0db;font-size:.82rem}
+.profile-layout{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:80px;align-items:start}
+.profile-aside{position:sticky;top:132px;padding:28px;border-left:4px solid var(--gold);background:var(--blue-soft);border-radius:0 18px 18px 0}
+.profile-aside h2{font-size:1.45rem}.profile-aside p{color:var(--muted)}
+.profile-story h2{font-size:clamp(1.8rem,3vw,2.6rem)}
+.career-timeline{display:grid;gap:0;margin:36px 0 0;padding:0;list-style:none}
+.career-timeline li{position:relative;padding:0 0 34px 42px;border-left:2px solid #bdd5df}
+.career-timeline li:last-child{padding-bottom:0}.career-timeline li:before{content:"";position:absolute;left:-8px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 5px #e4f2f6}
+.career-timeline strong{display:block;color:var(--navy);font-family:var(--heading);font-size:1.08rem}.career-timeline span{display:block;margin-top:4px;color:var(--muted)}
+.founder-quote{margin:0;padding:46px;border-radius:24px;background:var(--navy);color:#dce8ef;font-size:clamp(1.25rem,2.4vw,1.7rem);line-height:1.5}
+.founder-quote cite{display:block;margin-top:22px;color:#8fc9d8;font-size:.85rem;font-style:normal;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.source-note{margin-top:30px;color:var(--muted);font-size:.82rem}.source-note a{color:var(--teal);text-decoration:underline}
+@media(max-width:820px){.founder-spotlight-grid,.founder-hero-grid,.profile-layout{grid-template-columns:1fr;gap:40px}.founder-portrait{min-height:480px}.founder-hero-photo{min-height:520px}.profile-aside{position:static}.founder-facts{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.brand-logo{width:50px;height:50px}.founder-portrait,.founder-hero-photo{min-height:420px}.founder-facts{grid-template-columns:1fr}.founder-quote{padding:30px}}
+
 /* Aspirational photography system (D) */
 .hero-grid{grid-template-columns:minmax(0,1fr) minmax(360px,.92fr);gap:64px}
 .hero-visual{position:relative;min-height:540px;margin:0;overflow:hidden;border:1px solid rgba(255,255,255,.18);border-radius:24px;box-shadow:0 30px 70px rgba(0,0,0,.28)}

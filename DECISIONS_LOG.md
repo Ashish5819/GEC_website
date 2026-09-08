@@ -1744,61 +1744,72 @@ While Proposed, these authority decisions govern documentation consistency only 
 
 ---
 
+### GEC-DEC-113
+
+**Date:** 8 September 2026
+**Category:** Brand and Founder Content
+**Decision:** Use the owner-supplied GEC logo and Dr. Mohammed Abbas Ali portrait, and publish the owner-approved founder biography using professional claims verified against official Dr. MCR HRDI sources.
+**Status:** Confirmed
+**Reason:** The project owner supplied and explicitly approved the final visual assets and biography for website use.
+**Impact:** Site header, footer, browser icon, homepage founder section, dedicated founder page, metadata, and brand presentation.
+**Source or Approver:** Project owner; biography facts cross-checked against official Dr. MCR HRDI profile and course materials on 8 September 2026
+**Related Files:** DECISIONS_LOG.md, src/app/page.tsx, src/app/about/founder/page.tsx, src/components/site-header.tsx, src/components/site-footer.tsx, src/lib/site-data.ts, src/app/globals.css, public/images/gec-logo.webp, public/images/dr-mohammed-abbas-ali.webp, src/app/icon.png
+**Follow-Up Action:** Re-verify any time-sensitive current-role wording before production launch.
+
+---
+
 ## 18. Pending Owner Approvals
 
 The following matters require explicit owner approval:
 
 1. Founder’s final public designation
-2. Founder biography
-3. Founder photograph
-4. Founder message
-5. Final tagline
-6. Final logo
-7. Brand colours
-8. Typography
-9. Exact office address
-10. Office hours
-11. WhatsApp number
-12. Counselling modes
-13. Free introductory session
-14. Detailed counselling-session duration
-15. Service pricing
-16. Refund rules
-17. Advisor names and profiles
-18. Staff roles
-19. University partnerships
-20. Test-preparation delivery
-21. Language-training delivery
-22. Post-arrival support scope
-23. Enquiry-response commitment
-24. Domain name
-25. Professional email addresses
-26. Transactional email provider
-27. Analytics provider
-28. Error-monitoring provider
-29. Spam-protection provider
-30. Data-retention periods
-31. Staff authentication method
-32. Multi-factor authentication policy
-33. Administrative session duration
-34. Launch date
-35. Legal structure
-36. Legal-page approval
-37. Production launch approval
-38. Newsletter activation
-39. Final admin settings scope
-40. Testimonial publication workflow
-41. Leadership and advisor publication workflow
-42. Canonical form required fields
-43. Form and enquiry owner
-44. Content verification owner
-45. Privacy request owner
-46. Security incident owner
-47. Backup and recovery owner
-48. Dummy content review owner
-49. Event-registration status vocabulary
-50. Consent metadata design
-51. Verification metadata workflow
+2. Founder message
+3. Final tagline
+4. Brand colours
+5. Typography
+6. Exact office address
+7. Office hours
+8. WhatsApp number
+9. Counselling modes
+10. Free introductory session
+11. Detailed counselling-session duration
+12. Service pricing
+13. Refund rules
+14. Advisor names and profiles
+15. Staff roles
+16. University partnerships
+17. Test-preparation delivery
+18. Language-training delivery
+19. Post-arrival support scope
+20. Enquiry-response commitment
+21. Domain name
+22. Professional email addresses
+23. Transactional email provider
+24. Analytics provider
+25. Error-monitoring provider
+26. Spam-protection provider
+27. Data-retention periods
+28. Staff authentication method
+29. Multi-factor authentication policy
+30. Administrative session duration
+31. Launch date
+32. Legal structure
+33. Legal-page approval
+34. Production launch approval
+35. Newsletter activation
+36. Final admin settings scope
+37. Testimonial publication workflow
+38. Leadership and advisor publication workflow
+39. Canonical form required fields
+40. Form and enquiry owner
+41. Content verification owner
+42. Privacy request owner
+43. Security incident owner
+44. Backup and recovery owner
+45. Dummy content review owner
+46. Event-registration status vocabulary
+47. Consent metadata design
+48. Verification metadata workflow
 
 Detailed design-system values—including breakpoints, type scale, spacing, radii, and motion timing—remain proposed until final design approval, even where individual values are not separately repeated in the decisions log.
 
@@ -1813,9 +1824,6 @@ The following information must be verified before publication:
 - Office address
 - Office hours
 - WhatsApp availability
-- Founder biography
-- Founder qualifications
-- Founder professional history
 - Advisor profiles
 - University partnerships
 - University logos
